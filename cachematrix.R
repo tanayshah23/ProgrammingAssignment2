@@ -2,6 +2,11 @@
 ## functions do
 
 ## Write a short comment describing this function
+## Creates a special matrix object that can cache its inverse
+## Initialize inv to NULL
+## Create set and setinv functions (self-expalnatory)
+## Create get and getint functions (self-explanatory)
+## Return a list of combinations of these functions
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -19,6 +24,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## Compute the inverse of the special matrix returned by "makeCacheMatrix"
+## above. If the inverse has already been calculated (and the matrix has not
+## changed), then the "cachesolve" should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinv()
